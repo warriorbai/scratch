@@ -1,18 +1,16 @@
 #include"common_header.h"
 #include"case.h"
-using namespace std;
-string case_run = "sort1";
 
 void run_case(string case_run) {
-    if(case_run == "sort1") {
-        sort1();
+    if(case_run == "insert_sort") {
+        test_insert_sort();
     } else { 
-        cout<<"No case run!"<<endl;
+        cout<<"Error: Can't recognize case name. No case run!"<<endl;
     }
-
 }
 
-int main() {
+int main(int argc, char* argv[]) {
+    string case_run = (argc > 1) ? string(argv[1]):string("");
     rusage usage;
     getrusage(RUSAGE_SELF, &usage);
     long s_begin = usage.ru_utime.tv_sec;

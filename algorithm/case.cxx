@@ -1,6 +1,6 @@
 #include"case.h"
-void sort1() {
-    cout<<"running case:sort1"<<endl;
+void test_insert_sort() {
+    cout<<"running case: test insert sort"<<endl;
 
 
 }

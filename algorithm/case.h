@@ -1,2 +1,2 @@
 #include"common_header.h"
-void sort1();
+void test_insert_sort();
