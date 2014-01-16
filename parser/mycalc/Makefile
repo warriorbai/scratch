@@ -41,4 +41,4 @@ calc: main.o $(LIB)
 	$(CC) $(CFLAGS) -o $@ main.o $(LIB)
 
 clean:
-	$(RM) $(OBJS) main.o calc calcy.h calcy.cxx calcl.cxx
+	$(RM) $(OBJS) $(LIB) main.o calc calc.h calcy.cxx calcl.cxx
