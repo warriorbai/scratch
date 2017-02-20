@@ -32,6 +32,6 @@ g++ main.cc -I/home/wbai/dev/git/leveldb/include -L/home/wbai/dev/git/leveldb/ou
 
 To make it easy
 
-copy    leveldb/out-shared to   /usr/local/lib   or   /usr/lib
+copy    leveldb/out-shared/libleveldb.so to   /usr/local/lib   or   /usr/lib
 
 Set LD_LIBRARY_PATH
