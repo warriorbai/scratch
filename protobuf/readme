@@ -1,0 +1,10 @@
+Get source code for protobuf
+
+git clone https://github.com/google/protobuf.git
+
+
+1. generate 
+protoc -I=/home/wbai/code/protobuf  --cpp_out=/home/wbai/code/protobuf /home/wbai/code/protobuf/person.proto
+
+2. compile 
+g++ person.pb.cc  reader.cc  -I /usr/local/protobuf/include -L /usr/local/protobuf/lib -lprotobuf
